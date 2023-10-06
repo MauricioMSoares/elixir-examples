@@ -3,6 +3,7 @@ defmodule MyModule do
     import Kernel, except: [inspect: 1]
 
     alias MyModule.Math, as: MyMath
+    alias MyModule.MultiplicationTable, as: Times
 
     require Integer
 
@@ -10,7 +11,7 @@ defmodule MyModule do
         inspect(MyMath.sum(2, 2))
     end
 
-    def is_number_even(num) do
+    def even?(num) do
         puts("Is number #{num} even? #{Integer.is_even(num)}")
     end
 
